@@ -1,2 +1,17 @@
-Scanner input=new Scanner (System.in);
-System.out.print
+
+Scanner input = new Scanner(System.in);
+            System.out.println("Enter array length: ");
+            int size = input.nextInt();
+            int array[] = new int[size];
+            System.out.println("Insert array elements:");
+
+            for (int i = 0; i < size; i++) {
+                array[i] = input.nextInt();
+            }
+
+            int sum = 0;
+            for (int i = 0; i < array.length; i++)
+            sum = sum + array[i];
+            System.out.println("The sum of all stored elements of array is: "+ sum);
+    }
+}
